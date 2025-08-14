@@ -1933,6 +1933,16 @@ a:focus {
   font-size: 0.8rem;
 }
 
+/* Make video fill the container like images */
+.gallery-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 6px; 
+}
+
+
 /* Buttons */
 .view-btn, .play-btn {
   width: 60px;
