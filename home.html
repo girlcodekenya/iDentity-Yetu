@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity Yetu - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="index-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-content">
+          <div class="nav-brand">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="Identity Yetu logo"
+              style="width: 150px; height: auto"
+            />
+          </div>
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="getid.html" class="nav-link">Get ID</a>
+            <a href="learn&lead.html" class="nav-link">Learn & Lead</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="volunteer-btn" onclick="window.location.href='volunteer.html'">
+              Volunteer
+            </button>
+            <button class="donate-btn" onclick="window.location.href='donate.html'">
+              Donate
+            </button>
+          </div>
+          <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="getid.html" class="mobile-nav-link">Get ID</a>
+        <a href="learn&lead.html" class="mobile-nav-link">Learn & Lead</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-volunteer-btn" onclick="window.location.href='volunteer.html'">
+          Volunteer 
+        </button>
+        <button class="mobile-donate-btn" onclick="window.location.href='donate.html'">
+          Donate 
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+     <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+          <h1 class="hero-title">
+            YOUR IDENTITY CARD IS
+            <br />
+            <span class="hero-highlight">YOUR POWER</span>
+          </h1>
+          <p class="hero-subtitle">
+            Together, we reclaim our power. Together, we build the Kenya we
+            deserve.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary">
+              <i class="fas fa-users"></i>
+              How to Get your ID Card
+            </button>
+            <button class="btn btn-secondary">
+              <i class="fas fa-heart"></i>
+              Join Us on the road
+            </button>
+          </div>
+
+          <!-- Upcoming Stopovers Ticker -->
+          <div class="hero-ticker">
+            <div class="ticker-content">
+              <i class="fas fa-map-marker-alt ticker-icon"></i>
+              <span class="ticker-label">This week:</span>
+              <span class="ticker-location">Narok | Ololulunga | 10 AM</span>
+              <button class="ticker-link">See Full Map</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upcoming Events Ticker -->
+      <section class="ticker-section">
+        <div class="ticker-wrapper">
+          <div class="ticker-scroll">
+            <span class="ticker-highlight">Next Stopovers:</span>
+            <span class="ticker-item">Narok - Ololulunga (Mar 15, 10 AM)</span>
+            <span class="ticker-item">Nakuru Town (Mar 22, 2 PM)</span>
+            <span class="ticker-item">Eldoret (Mar 29, 11 AM)</span>
+            <span class="ticker-item">Narok - Ololulunga (Mar 15, 10 AM)</span>
+            <span class="ticker-item">Nakuru Town (Mar 22, 2 PM)</span>
+            <span class="ticker-item">Eldoret (Mar 29, 11 AM)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Omtatah Statement Section -->
+      <section class="statement-section" id="about">
+        <div class="container">
+          <div class="statement-card">
+            <blockquote class="statement-quote">
+              "We, the people of Kenya, have the power to shape our destiny.
+              Identity Yetu is not just a movement—it's a revolution of
+              consciousness, a return to our constitutional roots, and a march
+              toward the Second Republic we deserve."
+            </blockquote>
+            <cite class="statement-author">- Statement by Okiyah Omtatah</cite>
+          </div>
+        </div>
+      </section>
+
+      <!-- Homepage Featured Video -->
+      <section class="homepage-featured-video">
+        <div class="homepage-featured-video-container">
+          <video class="homepage-featured-video-player" controls poster="./assets/images/home.png">
+            <source
+              src="https://dl.dropboxusercontent.com/scl/fi/7psbolomqmhagfthk48d4/VIDEO-THE-CONSTITUTION.mp4?rlkey=7cqyeukrxse2z1at7589qhg6d&st=pych7roo"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="homepage-featured-video-badge">
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+
+        <div class="homepage-featured-video-info">
+          <h3>The Constitution of Kenya</h3>
+          <p>An overview</p>
+          <span class="homepage-featured-video-date">
+            <i class="fas fa-calendar"></i> August 8, 2025
+          </span>
+        </div>
+      </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+            <p class="footer-text">
+              Empowering Kenyans through constitutional education and civic
+              engagement.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="getid.html">Get ID</a></li>
+              <li><a href="learn&lead.html">Learn & Lead</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                +254 XXX XXX XXX
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                info@identityyetu.org
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom"
+          style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1rem;">
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">
+            Powered by Team
+            <img src="./assets/images/Omtatah logo.png" alt="Team Omtatah"
+              style="display: inline-block; height: 30px; margin: 0 4px; vertical-align: middle;">
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+      // Check if user came from splash - if not, redirect back
+      document.addEventListener('DOMContentLoaded', function () {
+        if (!sessionStorage.getItem('hasSeenSplash')) {
+          window.location.href = '/';
+        }
+      });
+    </script>
+    </body>
+    
+    </html>
