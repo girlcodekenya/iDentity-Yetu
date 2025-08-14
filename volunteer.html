@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity Yetu - Volunteer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="index-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="getid.html" class="nav-link">Get ID</a>
+                    <a href="learn&lead.html" class="nav-link">Learn & Lead</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="volunteer-btn" onclick="window.location.href='volunteer.html'">
+                        Volunteer
+                    </button>
+                    <button class="donate-btn" onclick="window.location.href='donate.html'">
+                        Donate
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="getid.html" class="mobile-nav-link">Get ID</a>
+            <a href="learn&lead.html" class="mobile-nav-link">Learn & Lead</a>
+            <a href="events.html" class="mobile-nav-link">Events</a>
+            <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <button class="mobile-volunteer-btn" onclick="window.location.href='volunteer.html'">
+                Volunteer 
+            </button>
+            <button class="mobile-donate-btn" onclick="window.location.href='donate.html'">
+                Donate 
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="donate-hero">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>Join Identity Yetu</h1>
+                <p>Be part of the movement empowering Kenyans through constitutional education and civic engagement.</p>
+            </div>
+        </section>
+
+        <!-- Volunteer Container -->
+        <div class="infographic-container">
+            
+            <!-- Why Volunteer Section -->
+            <div class="process-section">
+                <div class="section-header new-applicants">
+                    <h2><i class="fas fa-hands-helping"></i> Why Volunteer With Us</h2>
+                    <p class="subtitle">Make a meaningful difference in Kenya's democratic future</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number blue">1</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-lightbulb"></i> Build Skills</h3>
+                            <p>Develop leadership, communication, and civic engagement skills while making a real impact in your community.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number blue">2</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-network-wired"></i> Connect</h3>
+                            <p>Network with like-minded individuals passionate about constitutional education and democratic participation.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number blue">3</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-trophy"></i> Create Change</h3>
+                            <p>Be part of educating and empowering fellow Kenyans to know their rights and participate actively in democracy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer Registration Section -->
+            <div class="process-section">
+                <div class="section-header lost-id">
+                    <h2><i class="fas fa-user-plus"></i> Join the Movement</h2>
+                    <p class="subtitle">Fill out the form below to become a volunteer</p>
+                </div>
+                
+                <div class="donation-methods">
+                    <div class="donation-card" style="max-width: 800px; margin: 0 auto;">
+                        <div class="card-header">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h3>Volunteer Registration</h3>
+                            <p>Complete your registration in just a few steps</p>
+                        </div>
+                        <div class="card-body">
+                            <form id="volunteer-form" class="volunteer-form">
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                    </div>
+                                    <div class="form-group half-width">
+                                        <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="0712345678" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group half-width">
+                                        <label for="ageBracket"><i class="fas fa-calendar-alt"></i> Age Bracket</label>
+                                        <select id="ageBracket" name="ageBracket" required>
+                                            <option value="">Select Age Bracket</option>
+                                            <option value="18-24">18-24</option>
+                                            <option value="25-34">25-34</option>
+                                            <option value="35-44">35-44</option>
+                                            <option value="45-54">45-54</option>
+                                            <option value="55+">55+</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="county"><i class="fas fa-map-marker-alt"></i> County</label>
+                                        <select id="county" name="county" required>
+                                            <option value="">Select County</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group half-width">
+                                        <label for="constituency"><i class="fas fa-location-dot"></i> Constituency</label>
+                                        <select id="constituency" name="constituency" required>
+                                            <option value="">Select Constituency</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group half-width">
+                                        <label for="registeredVoter"><i class="fas fa-vote-yea"></i> Registered Voter?</label>
+                                        <select id="registeredVoter" name="registeredVoter" required>
+                                            <option value="">Select</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group half-width">
+                                        <label for="availability"><i class="fas fa-clock"></i> Availability</label>
+                                        <select id="availability" name="availability" required>
+                                            <option value="">Select Availability</option>
+                                            <option value="weekends">Weekends</option>
+                                            <option value="evenings">Evenings</option>
+                                            <option value="flexible">Flexible</option>
+                                            <option value="online">Online Only</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reason"><i class="fas fa-question-circle"></i> Reason for Joining</label>
+                                    <select id="reason" name="reason" required>
+                                        <option value="">Select Primary Reason</option>
+                                        <option value="awareness">Spread Constitutional Awareness</option>
+                                        <option value="volunteer">Want to Volunteer</option>
+                                        <option value="support">Support the Cause</option>
+                                        <option value="political">Political Belief</option>
+                                        <option value="community">Community Development</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="roles"><i class="fas fa-tasks"></i> Role Preferences (Select up to 2)</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="roles" value="identity_yetu">
+                                            <span class="checkmark"></span>
+                                            Identity Yetu Education
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="roles" value="voter_mobilization">
+                                            <span class="checkmark"></span>
+                                            Voter Mobilization
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="roles" value="presidential_committee">
+                                            <span class="checkmark"></span>
+                                            Presidential Exploratory Committee
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="whyJoining"><i class="fas fa-heart"></i> Why are you joining us?</label>
+                                    <textarea id="whyJoining" name="whyJoining" rows="4" placeholder="Tell us what motivates you to join Identity Yetu..." required></textarea>
+                                </div>
+
+                                <!-- Pledges Section -->
+                                <div class="form-group">
+                                    <label class="section-label"><i class="fas fa-hand-paper"></i> Your Commitment</label>
+                                    <div class="pledge-section">
+                                        <label class="checkbox-label pledge-item">
+                                            <input type="checkbox" name="pledges" value="learn_constitution" required>
+                                            <span class="checkmark"></span>
+                                            <span class="pledge-text">✅ I pledge to learn the Constitution</span>
+                                        </label>
+                                        <label class="checkbox-label pledge-item">
+                                            <input type="checkbox" name="pledges" value="mobilize_people" required>
+                                            <span class="checkmark"></span>
+                                            <span class="pledge-text">✅ I pledge to mobilize at least 10 people</span>
+                                        </label>
+                                        <label class="checkbox-label pledge-item">
+                                            <input type="checkbox" name="pledges" value="vote_2027" required>
+                                            <span class="checkmark"></span>
+                                            <span class="pledge-text">✅ I pledge to vote in 2027</span>
+                                        </label>
+                                        <label class="checkbox-label pledge-item">
+                                            <input type="checkbox" name="pledges" value="remain_loyal" required>
+                                            <span class="checkmark"></span>
+                                            <span class="pledge-text">✅ I pledge to remain loyal to the movement</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="donate-submit-btn">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    Join the Movement
+                                </button>
+                                
+                                <div class="form-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    You will receive a confirmation email and WhatsApp group invitation after registration
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer Opportunities Section -->
+            <div class="process-section">
+                <div class="section-header new-applicants">
+                    <h2><i class="fas fa-users-cog"></i> Volunteer Opportunities</h2>
+                    <p class="subtitle">Choose how you'd like to contribute to our mission</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number blue"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="step-content">
+                            <h3>Constitutional Educator</h3>
+                            <p>Lead workshops and seminars to educate fellow citizens about their constitutional rights and responsibilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number blue"><i class="fas fa-bullhorn"></i></div>
+                        <div class="step-content">
+                            <h3>Community Mobilizer</h3>
+                            <p>Organize grassroots campaigns and community outreach programs to spread constitutional awareness.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number blue"><i class="fas fa-laptop"></i></div>
+                        <div class="step-content">
+                            <h3>Digital Volunteer</h3>
+                            <p>Support online campaigns, social media management, and digital content creation from anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+                    <p class="footer-text">
+                        Empowering Kenyans through constitutional education and civic
+                        engagement.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="getid.html">Get ID</a></li>
+                        <li><a href="learn&lead.html">Learn & Lead</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +254 XXX XXX XXX
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@identityyetu.org
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom"
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1rem;">
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">
+                    Powered by Team
+                    <img src="./assets/images/Omtatah logo.png" alt="Team Omtatah"
+                        style="display: inline-block; height: 30px; margin: 0 4px; vertical-align: middle;">
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(() => {
+          const kenyaData = {
+             "Baringo": ["Baringo Central", "Baringo North", "Baringo South", "Eldama Ravine", "Mogotio", "Tiaty"],
+            "Bomet": ["Bomet Central", "Bomet East", "Chepalungu", "Konoin", "Sotik"],
+            "Bungoma": ["Bumula", "Kabuchai", "Kanduyi", "Kimilili", "Mt. Elgon", "Sirisia", "Tongaren", "Webuye East", "Webuye West"],
+            "Busia": ["Budalangi", "Funyula", "Nambale", "Teso North", "Teso South"],
+            "Elgeyo-Marakwet": ["Keiyo North", "Keiyo South", "Marakwet East", "Marakwet West"],
+            "Embu": ["Manyatta", "Mbeere North", "Mbeere South", "Runyenjes"],
+            "Garissa": ["Balambala", "Dadaab", "Fafi", "Garissa Township", "Ijara", "Lagdera"],
+            "Homa Bay": ["Homa Bay Town", "Kabondo Kasipul", "Karachuonyo", "Kasipul", "Mbita", "Ndhiwa", "Rangwe", "Suba"],
+            "Isiolo": ["Isiolo North", "Isiolo South"],
+            "Kajiado": ["Kajiado Central", "Kajiado East", "Kajiado North", "Kajiado South", "Kajiado West"],
+            "Kakamega": ["Butere", "Ikolomani", "Khwisero", "Likuyani", "Lugari", "Malava", "Matungu", "Mumias East", "Mumias West", "Navakholo", "Shinyalu"],
+            "Kericho": ["Ainamoi", "Belgut", "Bureti", "Kipkelion East", "Kipkelion West", "Sigowet/Soin"],
+            "Kiambu": ["Gatundu North", "Gatundu South", "Githunguri", "Juja", "Kabete", "Kiambaa", "Kiambu", "Kikuyu", "Limuru", "Ruiru", "Thika Town", "Lari"],
+            "Kilifi": ["Ganze", "Kaloleni", "Kilifi North", "Kilifi South", "Magarini", "Malindi", "Rabai"],
+            "Kirinyaga": ["Gichugu", "Kirinyaga Central", "Mwea", "Ndia"],
+            "Kisii": ["Bomachoge Borabu", "Bomachoge Chache", "Bobasi", "Bonchari", "Kitutu Chache North", "Kitutu Chache South", "Nyaribari Chache", "Nyaribari Masaba", "South Mugirango"],
+            "Kisumu": ["Kisumu Central", "Kisumu East", "Kisumu West", "Muhoroni", "Nyakach", "Nyando", "Seme"],
+            "Kitui": ["Kitui Central", "Kitui East", "Kitui Rural", "Kitui South", "Kitui West", "Mwingi Central", "Mwingi North", "Mwingi West"],
+            "Kwale": ["Kinango", "Lungalunga", "Matuga", "Msambweni"],
+            "Laikipia": ["Laikipia East", "Laikipia North", "Laikipia West"],
+            "Lamu": ["Lamu East", "Lamu West"],
+            "Machakos": ["Kathiani", "Machakos Town", "Masinga", "Matungulu", "Mavoko", "Mwala", "Yatta", "Kangundo"],
+            "Makueni": ["Kaiti", "Kibwezi East", "Kibwezi West", "Kilome", "Makueni", "Mbooni"],
+            "Mandera": ["Banissa", "Lafey", "Mandera East", "Mandera North", "Mandera South", "Mandera West"],
+            "Marsabit": ["Laisamis", "Moyale", "North Horr", "Saku"],
+            "Meru": ["Buuri", "Igembe Central", "Igembe North", "Igembe South", "Imenti Central", "Imenti North", "Imenti South", "Tigania East", "Tigania West"],
+            "Migori": ["Awendo", "Kuria East", "Kuria West", "Nyatike", "Rongo", "Suna East", "Suna West", "Uriri"],
+            "Mombasa": ["Changamwe", "Jomba", "Kisauni", "Likoni", "Mvita", "Nyali"],
+            "Murang'a": ["Gatanga", "Kahuro", "Kandara", "Kangema", "Kigumo", "Kiharu", "Mathioya", "Murang'a South"],
+            "Nairobi": ["Dagoretti North", "Dagoretti South", "Embakasi Central", "Embakasi East", "Embakasi North", "Embakasi South", "Embakasi West", "Kamukunji", "Kasarani", "Kibra", "Lang'ata", "Makadara", "Mathare", "Roysambu", "Ruaraka", "Starehe", "Westlands"],
+            "Nakuru": ["Bahati", "Gilgil", "Kuresoi North", "Kuresoi South", "Molo", "Naivasha", "Nakuru Town East", "Nakuru Town West", "Njoro", "Rongai", "Subukia"],
+            "Nandi": ["Aldai", "Chesumei", "Emgwen", "Mosop", "Nandi Hills", "Tinderet"],
+            "Narok": ["Kajiado North", "Narok East", "Narok North", "Narok South", "Narok West", "Transmara East", "Transmara West"],
+            "Nyamira": ["Borabu", "Kitutu Masaba", "North Mugirango", "West Mugirango"],
+            "Nyandarua": ["Kinangop", "Kipipiri", "Ndaragwa", "Ol Kalou", "Ol Joro Orok"],
+            "Nyeri": ["Kieni", "Mathira", "Mukurweini", "Nyeri Town", "Othaya", "Tetu"],
+            "Samburu": ["Samburu East", "Samburu North", "Samburu West"],
+            "Siaya": ["Alego Usonga", "Bondo", "Gem", "Rarieda", "Ugenya", "Ugunja"],
+            "Taita-Taveta": ["Mwatate", "Taveta", "Voi", "Wundanyi"],
+            "Tana River": ["Bura", "Galole", "Garsen"],
+            "Tharaka-Nithi": ["Chuka/Igambang'ombe", "Maara", "Tharaka"],
+            "Trans Nzoia": ["Cherangany", "Endebess", "Kiminini", "Kwanza", "Saboti"],
+            "Turkana": ["Loima", "Turkana Central", "Turkana East", "Turkana North", "Turkana South", "Turkana West"],
+            "Uasin Gishu": ["Ainabkoi", "Kapseret", "Kesses", "Moiben", "Soy", "Turbo"],
+            "Vihiga": ["Emuhaya", "Hamisi", "Luanda", "Sabatia"],
+            "Wajir": ["Eldas", "Tarbaj", "Wajir East", "Wajir North", "Wajir South", "Wajir West"]
+          };
+
+          const countySelect = document.getElementById('county');
+          const constituencySelect = document.getElementById('constituency');
+
+          if (countySelect && constituencySelect) {
+            Object.keys(kenyaData).sort().forEach(county => {
+              const option = document.createElement('option');
+              option.value = county;
+              option.textContent = county;
+              countySelect.appendChild(option);
+            });
+
+            countySelect.addEventListener('change', function () {
+              const selectedCounty = this.value;
+              constituencySelect.innerHTML = '<option value="">Select Constituency</option>';
+
+              if (selectedCounty && kenyaData[selectedCounty]) {
+                kenyaData[selectedCounty].forEach(constituency => {
+                  const option = document.createElement('option');
+                  option.value = constituency;
+                  option.textContent = constituency;
+                  constituencySelect.appendChild(option);
+                });
+                constituencySelect.disabled = false;
+              } else {
+                constituencySelect.disabled = true;
+              }
+            });
+          }
+        }, 500);
+      });
+    </script>
+    </body>
+    
+    </html>

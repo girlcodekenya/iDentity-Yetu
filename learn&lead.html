@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity Yetu - Learn & Lead</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body class="index-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="getid.html" class="nav-link">Get ID</a>
+                    <a href="learn&lead.html" class="nav-link">Learn & Lead</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="volunteer-btn" onclick="window.location.href='volunteer.html'">
+                        Volunteer
+                    </button>
+                    <button class="donate-btn" onclick="window.location.href='donate.html'">
+                        Donate
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="getid.html" class="mobile-nav-link">Get ID</a>
+            <a href="learn&lead.html" class="mobile-nav-link">Learn & Lead</a>
+            <a href="events.html" class="mobile-nav-link">Events</a>
+            <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <button class="mobile-volunteer-btn" onclick="window.location.href='volunteer.html'">
+                Volunteer
+            </button>
+        <button class="mobile-donate-btn" onclick="window.location.href='donate.html'">
+                Donate
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="learn-lead-hero">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>Learn & Lead</h1>
+                <p>Teach the Constitution, Equip Educators, Empower Citizens</p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Educational Resources</h2>
+                    <p>Access comprehensive materials to understand and teach Kenya's Constitution</p>
+                </div>
+
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Constitution Basics</h3>
+                        <p>A comprehensive guide covering the fundamental principles and structure of Kenya's
+                            Constitution. Perfect for beginners and educators.</p>
+                        <a href="./assets/booklets/constitution_basics.pdf" target="_blank" class="resource-link">
+                            <i class="fas fa-download"></i>
+                            Download PDF
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Rights & Responsibilities</h3>
+                        <p>Learn about your constitutional rights and civic responsibilities as a Kenyan citizen.
+                            Essential reading for all ages.</p>
+                        <a href="./assets/booklets/rights_and_responsibilities.pdf" target="_blank"
+                            class="resource-link">
+                            <i class="fas fa-download"></i>
+                            Download PDF
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Volunteer Curriculum</h3>
+                        <p>Complete presentation slides for volunteers and educators. Includes interactive activities
+                            and discussion points.</p>
+                        <a href="./assets/slides/volunteer_curriculum.pptx" target="_blank" class="resource-link">
+                            <i class="fas fa-download"></i>
+                            Download Slides
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>We the People</h2>
+                    <p>Kenya ni Yetu</p>
+                </div>
+
+                <div class="video-container">
+                    <video controls poster="./assets/images/video-thumbnail.jpg">
+                        <source src="./assets/videos/WE THE PEOPLE-.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section HTML -->
+       <div class="container">
+        <div class="quiz-section">
+            <h3><i class="fas fa-brain"></i> Test Your Knowledge</h3>
+            <p id="description">Challenge yourself with our interactive Constitution quiz</p>
+            <button class="quiz-btn" onclick="startQuiz()">
+                <i class="fas fa-play"></i> Take the Quiz
+            </button>
+            
+            <div class="quiz-container" id="quiz">
+                <!-- Question 1 -->
+                <div class="question active" id="q1">
+                    <div class="question-header">
+                        <div class="question-number">1</div>
+                        <div>Question 1 of 5</div>
+                    </div>
+                    <div class="question-text">
+                        According to Article 1 of the Constitution, all sovereign power belongs to:
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(1, this, false)">
+                        <div class="option-letter">A</div>
+                        <div>The President</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(1, this, true)">
+                        <div class="option-letter">B</div>
+                        <div>The people of Kenya</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(1, this, false)">
+                        <div class="option-letter">C</div>
+                        <div>Parliament</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(1, this, false)">
+                        <div class="option-letter">D</div>
+                        <div>The Supreme Court</div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn" disabled>Previous</button>
+                        <button class="btn" id="next1" onclick="nextQuestion(1)" disabled>Next</button>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question" id="q2">
+                    <div class="question-header">
+                        <div class="question-number">2</div>
+                        <div>Question 2 of 5</div>
+                    </div>
+                    <div class="question-text">
+                        The Constitution of Kenya was promulgated in which year?
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(2, this, false)">
+                        <div class="option-letter">A</div>
+                        <div>2008</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(2, this, true)">
+                        <div class="option-letter">B</div>
+                        <div>2010</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(2, this, false)">
+                        <div class="option-letter">C</div>
+                        <div>2012</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(2, this, false)">
+                        <div class="option-letter">D</div>
+                        <div>2013</div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn" onclick="prevQuestion(2)">Previous</button>
+                        <button class="btn" id="next2" onclick="nextQuestion(2)" disabled>Next</button>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question" id="q3">
+                    <div class="question-header">
+                        <div class="question-number">3</div>
+                        <div>Question 3 of 5</div>
+                    </div>
+                    <div class="question-text">
+                        Which Chapter in the Constitution outlines the Bill of Rights?
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(3, this, false)">
+                        <div class="option-letter">A</div>
+                        <div>Chapter Two</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(3, this, false)">
+                        <div class="option-letter">B</div>
+                        <div>Chapter Three</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(3, this, true)">
+                        <div class="option-letter">C</div>
+                        <div>Chapter Four</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(3, this, false)">
+                        <div class="option-letter">D</div>
+                        <div>Chapter Five</div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn" onclick="prevQuestion(3)">Previous</button>
+                        <button class="btn" id="next3" onclick="nextQuestion(3)" disabled>Next</button>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question" id="q4">
+                    <div class="question-header">
+                        <div class="question-number">4</div>
+                        <div>Question 4 of 5</div>
+                    </div>
+                    <div class="question-text">
+                        According to Article 38, every citizen has the right to participate in the electoral process by:
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(4, this, false)">
+                        <div class="option-letter">A</div>
+                        <div>Voting only</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(4, this, true)">
+                        <div class="option-letter">B</div>
+                        <div>Voting, being a candidate, and participating in campaigns</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(4, this, false)">
+                        <div class="option-letter">C</div>
+                        <div>Being a candidate only</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(4, this, false)">
+                        <div class="option-letter">D</div>
+                        <div>Participating in campaigns only</div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn" onclick="prevQuestion(4)">Previous</button>
+                        <button class="btn" id="next4" onclick="nextQuestion(4)" disabled>Next</button>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question" id="q5">
+                    <div class="question-header">
+                        <div class="question-number">5</div>
+                        <div>Question 5 of 5</div>
+                    </div>
+                    <div class="question-text">
+                        How many counties does Kenya have according to the Constitution?
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(5, this, false)">
+                        <div class="option-letter">A</div>
+                        <div>45</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(5, this, false)">
+                        <div class="option-letter">B</div>
+                        <div>46</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(5, this, true)">
+                        <div class="option-letter">C</div>
+                        <div>47</div>
+                    </div>
+                    <div class="answer-option" onclick="selectAnswer(5, this, false)">
+                        <div class="option-letter">D</div>
+                        <div>48</div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn" onclick="prevQuestion(5)">Previous</button>
+                        <button class="btn" id="next5" onclick="showResults()" disabled>Finish Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="results" id="results">
+                    <div class="score" id="score">0/5</div>
+                    <div class="message" id="msg">Great job!</div>
+                    <p>You've completed the Constitution quiz. Keep learning!</p>
+                    <button class="restart-btn" onclick="restart()">
+                        <i class="fas fa-redo"></i> Take Quiz Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Leadership Section -->
+        <section class="content-section leadership-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>National Steering Committee</h2>
+                    <p>Meet the dedicated leaders driving constitutional education across Kenya</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="./assets/images/dummy.webp" alt="Jane Doe" class="member-photo" />
+                        <h3>Jane Doe</h3>
+                        <p class="county">Nairobi County</p>
+                        <p class="role">Chairperson</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="./assets/images/dummy.webp" alt="John Mwangi" class="member-photo" />
+                        <h3>John Mwangi</h3>
+                        <p class="county">Mombasa County</p>
+                        <p class="role">Vice Chairperson</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="./assets/images/dummy.webp" alt="Grace Wanjiku" class="member-photo" />
+                        <h3>Grace Wanjiku</h3>
+                        <p class="county">Kiambu County</p>
+                        <p class="role">Secretary</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="./assets/images/dummy.webp" alt="David Kipkoech" class="member-photo" />
+                        <h3>David Kipkoech</h3>
+                        <p class="county">Uasin Gishu County</p>
+                        <p class="role">Treasurer</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="./assets/images/dummy.webp" alt="Mary Akinyi" class="member-photo" />
+                        <h3>Mary Akinyi</h3>
+                        <p class="county">Kisumu County</p>
+                        <p class="role">Programs Coordinator</p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="./assets/images/dummy.webp" alt="Ahmed Hassan" class="member-photo" />
+                        <h3>Ahmed Hassan</h3>
+                        <p class="county">Garissa County</p>
+                        <p class="role">Regional Representative</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+                    <p class="footer-text">
+                        Empowering Kenyans through constitutional education and civic
+                        engagement.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="getid.html">Get ID</a></li>
+                        <li><a href="learn&lead.html">Learn & Lead</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +254 XXX XXX XXX
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@identityyetu.org
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom"
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1rem;">
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">
+                    Powered by Team
+                    <img src="./assets/images/Omtatah logo.png" alt="Team Omtatah"
+                        style="display: inline-block; height: 30px; margin: 0 4px; vertical-align: middle;">
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

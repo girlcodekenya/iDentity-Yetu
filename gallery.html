@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity Yetu - Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="index-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-content">
+          <div class="nav-brand">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="Identity Yetu logo"
+              style="width: 150px; height: auto"
+            />
+          </div>
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="getid.html" class="nav-link">Get ID</a>
+            <a href="learn&lead.html" class="nav-link">Learn & Lead</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="volunteer-btn" onclick="window.location.href='volunteer.html'">
+              Volunteer
+            </button>
+            <button class="donate-btn" onclick="window.location.href='donate.html'">
+              Donate
+            </button>
+          </div>
+          <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="getid.html" class="mobile-nav-link">Get ID</a>
+        <a href="learn&lead.html" class="mobile-nav-link">Learn & Lead</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-volunteer-btn" onclick="window.location.href='volunteer.html'">
+          Volunteer 
+        </button>
+        <button class="mobile-donate-btn" onclick="window.location.href='donate.html'">
+          Donate 
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="gallery-hero">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1>Our Gallery</h1>
+          <p>Capturing moments from our journey across Kenya</p>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <div class="container">
+          
+          <!-- Gallery Grid -->
+          <div class="gallery-grid">
+            
+            <!-- Image Item -->
+            <div class="gallery-item">
+              <div class="media-container">
+                <img src="./assets/gallery/img1.jpg" alt="Constitutional education session">
+                <div class="media-overlay">
+                  <button class="view-btn">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Constitutional Education Session</h3>
+                <p>Community workshop on citizens' rights and responsibilities</p>
+                <span class="date"><i class="fas fa-calendar"></i> March 15, 2024</span>
+              </div>
+            </div>
+
+            <!-- Video Item -->
+            <div class="gallery-item">
+              <div class="media-container video-item">
+                <img src="./assets/gallery/img2.jpg" alt="Youth engagement program">
+                <div class="media-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+                <div class="video-badge">
+                  <i class="fas fa-video"></i>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Youth Engagement Program</h3>
+                <p>Empowering young Kenyans to participate in civic processes</p>
+                <span class="date"><i class="fas fa-calendar"></i> March 18, 2024</span>
+              </div>
+            </div>
+
+            <!-- Image Item -->
+            <div class="gallery-item">
+              <div class="media-container">
+                <img src="./assets/gallery/img3.jpg" alt="ID registration drive">
+                <div class="media-overlay">
+                  <button class="view-btn">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>ID Registration Drive</h3>
+                <p>Helping citizens obtain their national identification documents</p>
+                <span class="date"><i class="fas fa-calendar"></i> March 22, 2024</span>
+              </div>
+            </div>
+
+            <!-- Video Item -->
+            <div class="gallery-item">
+              <div class="media-container video-item">
+                <img src="./assets/gallery/img4.jpg" alt="Community outreach">
+                <div class="media-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+                <div class="video-badge">
+                  <i class="fas fa-video"></i>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Community Outreach</h3>
+                <p>Grassroots engagement in local communities</p>
+                <span class="date"><i class="fas fa-calendar"></i> April 5, 2024</span>
+              </div>
+            </div>
+
+            <!-- Image Item -->
+            <div class="gallery-item">
+              <div class="media-container">
+                <img src="./assets/gallery/img5.jpg" alt="Women's empowerment workshop">
+                <div class="media-overlay">
+                  <button class="view-btn">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Women's Empowerment Workshop</h3>
+                <p>Educational session on women's rights and leadership</p>
+                <span class="date"><i class="fas fa-calendar"></i> April 8, 2024</span>
+              </div>
+            </div>
+
+            <!-- Image Item -->
+            <div class="gallery-item">
+              <div class="media-container">
+                <img src="./assets/gallery/img6.jpg" alt="Civic education forum">
+                <div class="media-overlay">
+                  <button class="view-btn">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Civic Education Forum</h3>
+                <p>Public discussion on constitutional matters and governance</p>
+                <span class="date"><i class="fas fa-calendar"></i> April 12, 2024</span>
+              </div>
+            </div>
+
+            <!-- Video Item -->
+            <div class="gallery-item">
+              <div class="media-container video-item">
+                <img src="./assets/gallery/img7.jpg" alt="Student workshop">
+                <div class="media-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+                <div class="video-badge">
+                  <i class="fas fa-video"></i>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Student Workshop</h3>
+                <p>Educating the next generation about their constitutional rights</p>
+                <span class="date"><i class="fas fa-calendar"></i> April 15, 2024</span>
+              </div>
+            </div>
+
+            <!-- Image Item -->
+            <div class="gallery-item">
+              <div class="media-container">
+                <img src="./assets/gallery/img8.jpg" alt="Public rally">
+                <div class="media-overlay">
+                  <button class="view-btn">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Public Rally</h3>
+                <p>Mobilizing citizens for constitutional awareness and action</p>
+                <span class="date"><i class="fas fa-calendar"></i> April 20, 2024</span>
+              </div>
+            </div>
+
+            <!-- Image Item -->
+            <div class="gallery-item">
+              <div class="media-container">
+                <img src="./assets/gallery/img9.jpg" alt="Legal aid clinic">
+                <div class="media-overlay">
+                  <button class="view-btn">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="item-info">
+                <h3>Legal Aid Clinic</h3>
+                <p>Providing free legal assistance to community members</p>
+                <span class="date"><i class="fas fa-calendar"></i> April 25, 2024</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Media Modal -->
+      <div class="media-modal" id="mediaModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-media" id="modalMedia">
+            <!-- Media content will be loaded here -->
+          </div>
+          <div class="modal-info">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+            <p class="footer-text">
+              Empowering Kenyans through constitutional education and civic
+              engagement.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="getid.html">Get ID</a></li>
+              <li><a href="learn&lead.html">Learn & Lead</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                +254 XXX XXX XXX
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                info@identityyetu.org
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom"
+          style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1rem;">
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">
+            Powered by Team
+            <img src="./assets/images/Omtatah logo.png" alt="Team Omtatah"
+              style="display: inline-block; height: 30px; margin: 0 4px; vertical-align: middle;">
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

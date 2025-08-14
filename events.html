@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity Yetu - Events</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="index-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-content">
+          <div class="nav-brand">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="Identity Yetu logo"
+              style="width: 150px; height: auto"
+            />
+          </div>
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="getid.html" class="nav-link">Get ID</a>
+            <a href="learn&lead.html" class="nav-link">Learn & Lead</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="volunteer-btn" onclick="window.location.href='volunteer.html'">
+              Volunteer
+            </button>
+            <button class="donate-btn" onclick="window.location.href='donate.html'">
+              Donate
+            </button>
+          </div>
+          <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="getid.html" class="mobile-nav-link">Get ID</a>
+        <a href="learn&lead.html" class="mobile-nav-link">Learn & Lead</a>
+        <a href="events.html" class="mobile-nav-link">Events</a>
+        <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <button class="mobile-volunteer-btn" onclick="window.location.href='volunteer.html'">
+          Volunteer 
+        </button>
+        <button class="mobile-donate-btn" onclick="window.location.href='donate.html'">
+          Donate 
+        </button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="events-hero">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1>Constitutional Awareness Events</h1>
+          <p>Join us as we bring constitutional education to communities across Kenya.</p>
+        </div>
+      </section>
+
+      <!-- Events Container -->
+      <div class="infographic-container">
+        
+        <!-- Search and Filter Section -->
+        <div class="process-section">
+          <div class="section-header new-applicants">
+            <h2><i class="fas fa-search"></i> Find Events</h2>
+            <p class="subtitle">Search and filter events by location or date</p>
+          </div>
+          
+          <div class="steps-container">
+            <div class="step-card">
+              <div class="step-content" style="width: 100%;">
+                <div class="search-controls">
+                  <div class="search-wrap">
+                    <i class="fas fa-search search-icon"></i>
+                    <input id="searchInput" class="search-input" type="search" placeholder="Search events, locations, venues..." />
+                  </div>
+                  <div class="filter-row">
+                    <select id="countySelect" class="select-filter">
+                      <option value="">All Counties</option>
+                      <option value="nairobi">Nairobi</option>
+                      <option value="mombasa">Mombasa</option>
+                      <option value="kisumu">Kisumu</option>
+                      <option value="nakuru">Nakuru</option>
+                      <option value="eldoret">Eldoret</option>
+                    </select>
+                    <select id="constSelect" class="select-filter">
+                      <option value="">All Events</option>
+                      <option value="upcoming">Upcoming Events</option>
+                      <option value="completed">Completed Events</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Events Section -->
+        <div class="process-section">
+          <div class="section-header new-applicants">
+            <h2><i class="fas fa-calendar-alt"></i> Upcoming Events</h2>
+            <p class="subtitle">Don't miss these upcoming constitutional education events</p>
+          </div>
+          
+          <div class="steps-container">
+            <div class="step-card event-card" data-status="upcoming">
+              <div class="step-number blue">25</div>
+              <div class="step-content">
+                <h3><i class="fas fa-graduation-cap"></i> Constitutional Rights Workshop</h3>
+                <div class="event-details">
+                  <p><i class="fas fa-calendar"></i> <strong>Date:</strong> August 25, 2025</p>
+                  <p><i class="fas fa-clock"></i> <strong>Time:</strong> 9:00 AM - 4:00 PM</p>
+                  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Uhuru Park, Nairobi</p>
+                </div>
+                <p>A comprehensive workshop on understanding your constitutional rights as a Kenyan citizen. Learn about the Bill of Rights and how to exercise your civic duties.</p>
+                <div class="event-tags">
+                  <span class="event-tag blue">Constitution</span>
+                  <span class="event-tag blue">Rights</span>
+                  <span class="event-tag blue">Workshop</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-card event-card" data-status="upcoming">
+              <div class="step-number blue">05</div>
+              <div class="step-content">
+                <h3><i class="fas fa-users"></i> Youth Leadership Summit</h3>
+                <div class="event-details">
+                  <p><i class="fas fa-calendar"></i> <strong>Date:</strong> September 5, 2025</p>
+                  <p><i class="fas fa-clock"></i> <strong>Time:</strong> 8:00 AM - 6:00 PM</p>
+                  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> KICC, Nairobi</p>
+                </div>
+                <p>Empowering young leaders with constitutional knowledge and leadership skills. Network with like-minded youth and learn about governance structures.</p>
+                <div class="event-tags">
+                  <span class="event-tag blue">Youth</span>
+                  <span class="event-tag blue">Leadership</span>
+                  <span class="event-tag blue">Summit</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-card event-card" data-status="upcoming">
+              <div class="step-number blue">15</div>
+              <div class="step-content">
+                <h3><i class="fas fa-bullhorn"></i> Community Awareness Campaign</h3>
+                <div class="event-details">
+                  <p><i class="fas fa-calendar"></i> <strong>Date:</strong> September 15, 2025</p>
+                  <p><i class="fas fa-clock"></i> <strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Machakos Town Square</p>
+                </div>
+                <p>Join our grassroots campaign to educate communities about their constitutional rights and responsibilities. Free materials and refreshments provided.</p>
+                <div class="event-tags">
+                  <span class="event-tag blue">Community</span>
+                  <span class="event-tag blue">Campaign</span>
+                  <span class="event-tag blue">Education</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completed Events Section -->
+        <div class="process-section">
+          <div class="section-header lost-id">
+            <h2><i class="fas fa-check-circle"></i> Completed Events</h2>
+            <p class="subtitle">See our recent successful constitutional education events</p>
+          </div>
+          
+          <div class="steps-container">
+            <div class="step-card event-card" data-status="completed">
+              <div class="step-number red">18</div>
+              <div class="step-content">
+                <h3><i class="fas fa-heart"></i> Civic Education Outreach</h3>
+                <div class="event-details">
+                  <p><i class="fas fa-calendar"></i> <strong>Date:</strong> August 18, 2025</p>
+                  <p><i class="fas fa-clock"></i> <strong>Time:</strong> 10:00 AM - 3:00 PM</p>
+                  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Kibera Community Center, Nairobi</p>
+                </div>
+                <p>Community outreach program focused on civic education and voter registration. Successfully reached over 500 community members with constitutional knowledge.</p>
+                <div class="event-tags">
+                  <span class="event-tag red">Community</span>
+                  <span class="event-tag red">Education</span>
+                  <span class="event-tag red">Completed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-card event-card" data-status="completed">
+              <div class="step-number red">12</div>
+              <div class="step-content">
+                <h3><i class="fas fa-scale-balanced"></i> Legal Rights Workshop</h3>
+                <div class="event-details">
+                  <p><i class="fas fa-calendar"></i> <strong>Date:</strong> August 12, 2025</p>
+                  <p><i class="fas fa-clock"></i> <strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+                  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Mombasa Law Courts</p>
+                </div>
+                <p>Comprehensive workshop on legal rights and constitutional protections. Participants learned about due process, legal representation, and constitutional remedies.</p>
+                <div class="event-tags">
+                  <span class="event-tag red">Legal</span>
+                  <span class="event-tag red">Rights</span>
+                  <span class="event-tag red">Completed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-card event-card" data-status="completed">
+              <div class="step-number red">08</div>
+              <div class="step-content">
+                <h3><i class="fas fa-vote-yea"></i> Electoral Education Seminar</h3>
+                <div class="event-details">
+                  <p><i class="fas fa-calendar"></i> <strong>Date:</strong> August 8, 2025</p>
+                  <p><i class="fas fa-clock"></i> <strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+                  <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Kisumu Social Hall</p>
+                </div>
+                <p>Educational seminar on the electoral process and voting rights. Covered voter registration, electoral laws, and the importance of civic participation.</p>
+                <div class="event-tags">
+                  <span class="event-tag red">Electoral</span>
+                  <span class="event-tag red">Education</span>
+                  <span class="event-tag red">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+            <p class="footer-text">
+              Empowering Kenyans through constitutional education and civic
+              engagement.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="getid.html">Get ID</a></li>
+              <li><a href="learn&lead.html">Learn & Lead</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                +254 XXX XXX XXX
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                info@identityyetu.org
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom"
+          style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1rem;">
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">
+            Powered by Team
+            <img src="./assets/images/Omtatah logo.png" alt="Team Omtatah"
+              style="display: inline-block; height: 30px; margin: 0 4px; vertical-align: middle;">
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+  </body>
+</html>

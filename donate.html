@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identity Yetu - Donate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Every.org Donate Button -->
+    <script async defer src="https://embeds.every.org/0.4/sum.js"></script>
+</head>
+
+<body class="index-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="getid.html" class="nav-link">Get ID</a>
+                    <a href="learn&lead.html" class="nav-link">Learn & Lead</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="volunteer-btn" onclick="window.location.href='volunteer.html'">
+                        Volunteer
+                    </button>
+                    <button class="donate-btn" onclick="window.location.href='donate.html'">
+                        Donate
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="getid.html" class="mobile-nav-link">Get ID</a>
+            <a href="learn&lead.html" class="mobile-nav-link">Learn & Lead</a>
+            <a href="events.html" class="mobile-nav-link">Events</a>
+            <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <button class="mobile-volunteer-btn" onclick="window.location.href='volunteer.html'">
+                Volunteer 
+            </button>
+            <button class="mobile-donate-btn" onclick="window.location.href='donate.html'">
+                Donate 
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="donate-hero">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>Support Identity Yetu</h1>
+                <p>Your contribution helps us empower Kenyans through constitutional education and civic engagement.</p>
+            </div>
+        </section>
+
+        <!-- Donate Container -->
+        <div class="infographic-container">
+            
+            <!-- Why Donate Section -->
+            <div class="process-section">
+                <div class="section-header new-applicants">
+                    <h2><i class="fas fa-heart"></i> Why Your Support Matters</h2>
+                    <p class="subtitle">Together, we can build a more informed and engaged Kenya</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number blue">1</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-graduation-cap"></i> Constitutional Education</h3>
+                            <p>Fund workshops and seminars that educate citizens about their rights and responsibilities under the Kenyan Constitution.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number blue">2</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-users"></i> Community Outreach</h3>
+                            <p>Support grassroots campaigns that bring constitutional awareness to underserved communities across Kenya.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number blue">3</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-seedling"></i> Youth Empowerment</h3>
+                            <p>Empower the next generation of leaders with knowledge and skills for effective civic participation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donation Methods Section -->
+            <div class="process-section">
+                <div class="section-header lost-id">
+                    <h2><i class="fas fa-hand-holding-heart"></i> Choose Your Donation Method</h2>
+                    <p class="subtitle">Select the payment option that works best for you</p>
+                </div>
+                
+                <div class="donation-methods">
+                    <!-- M-PESA Section -->
+                    <div class="donation-card">
+                        <div class="card-header mpesa-header">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Donate via M-PESA</h3>
+                            <p>Quick and secure mobile money donation</p>
+                        </div>
+                        <div class="card-body">
+                            <form id="mpesa-donate-form" class="donate-form">
+                                <div class="form-group">
+                                    <label for="mpesa-phone"><i class="fas fa-phone"></i> Phone Number</label>
+                                    <input type="tel" id="mpesa-phone" name="phone" placeholder="0712345678" pattern="^07[0-9]{8}$" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mpesa-amount"><i class="fas fa-coins"></i> Amount (KES)</label>
+                                    <input type="number" id="mpesa-amount" name="amount" min="1" placeholder="Enter amount (minimum 1 KES)" required>
+                                </div>
+
+                                <button type="submit" class="donate-submit-btn mpesa-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send STK Push
+                                </button>
+                                
+                                <div class="form-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    You will receive an M-PESA prompt on your phone
+                                    <br>
+                                    <i class="fas fa-info-circle"></i>
+                                    Alternatively, use Paybill 522533 a/c 7993088
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Every.org Section -->
+                    <div class="donation-card">
+                        <div class="card-header card-header">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Donate via Card</h3>
+                            <p>Secure international payments with card or PayPal</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="every-donate-widget">
+                                <every-donate-button 
+                                    to="identity-yetu" 
+                                    theme="rounded" 
+                                    color="#140b8d"
+                                    text="Donate Now"
+                                    style="width: 100%; min-height: 60px;">
+                                </every-donate-button>
+                            </div>
+                            
+                            <div class="security-badges">
+                                <div class="security-badge">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>SSL Encrypted</span>
+                                </div>
+                                <div class="security-badge">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Secure Payments</span>
+                                </div>
+                                <div class="security-badge">
+                                    <i class="fas fa-file-invoice"></i>
+                                    <span>Tax Deductible</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-note">
+                                <i class="fas fa-info-circle"></i>
+                                Powered by Every.org - Supports Visa, Mastercard, PayPal & more
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="process-section">
+                <div class="section-header new-applicants">
+                    <h2><i class="fas fa-chart-line"></i> Your Impact in Numbers</h2>
+                    <p class="subtitle">See how your donations create real change in communities</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card impact-card">
+                        <div class="impact-number">500+</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-users"></i> Citizens Educated</h3>
+                            <p>Through our constitutional workshops and community outreach programs in 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card impact-card">
+                        <div class="impact-number">25</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-calendar-alt"></i> Events Organized</h3>
+                            <p>Educational events and workshops conducted across different counties in Kenya.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card impact-card">
+                        <div class="impact-number">12</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-map-marker-alt"></i> Counties Reached</h3>
+                            <p>Communities across Kenya now have better access to constitutional education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="./assets/images/logo.jpg" alt="Identity Yetu logo" style="width: 150px; height: auto" />
+                    <p class="footer-text">
+                        Empowering Kenyans through constitutional education and civic
+                        engagement.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="getid.html">Get ID</a></li>
+                        <li><a href="learn&lead.html">Learn & Lead</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +254 XXX XXX XXX
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@identityyetu.org
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom"
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1rem;">
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">
+                    Powered by Team
+                    <img src="./assets/images/Omtatah logo.png" alt="Team Omtatah"
+                        style="display: inline-block; height: 30px; margin: 0 4px; vertical-align: middle;">
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
